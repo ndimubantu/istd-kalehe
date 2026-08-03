@@ -24,8 +24,8 @@ collections:
             label_singular: "Article"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-                            - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
-              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
               - label: "Icône"
                 name: "icon"
                 widget: "select"
