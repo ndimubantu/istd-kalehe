@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités & Événements — ISTD Kalehe</title>
+  <meta name="description" content="Suivez les actualités, événements et graduations de l'ISTD Kalehe.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="../images/logo-istd.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/logo-istd.png" alt="Logo ISTD Kalehe" class="logo-icon">
+        <div class="logo-text-wrap">
+          <span class="logo-title">ISTD KALEHE</span>
+          <span class="logo-slogan">Apprendre, Innover, Réussir</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+          <li><a href="programmes.html" class="nav-link">Programmes</a></li>
+          <li><a href="vie-etudiante.html" class="nav-link">Vie étudiante</a></li>
+          <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <!-- ===================== BANNIÈRE ===================== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> / Actualités</p>
+      <h1>Actualités & Événements</h1>
+    </div>
+    <div class="topo-divider"></div>
+  </section>
+
+  <!-- ===================== ARTICLES ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Vie de l'institut</span>
+        <h2 class="section-title underline-gold">Dernières nouvelles de l'institut</h2>
+        <p class="section-subtitle">
+          Suivez les temps forts de la vie académique de l'ISTD Kalehe : ouverture des
+          inscriptions, cérémonies et événements du campus.
+        </p>
+      </div>
+
+      <!-- Articles générés dynamiquement depuis content/actualites.json
+           (modifiable depuis /admin sans toucher au code) -->
+      <div class="card-grid" id="actualites-list">
+        <p style="color:var(--text-muted);">Chargement des actualités…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logo-istd.png" alt="Logo ISTD Kalehe" class="logo-icon">
+          <span class="logo-title">ISTD KALEHE</span>
+        </div>
+        <p class="footer-signature">« Le savoir au service de votre avenir »</p>
+        <p class="footer-signature">« Étudier ici, c'est se donner les moyens de réussir demain. »</p>
+        <div class="social-links">
+          <a href="https://facebook.com/istd.kalehe" target="_blank" rel="noopener" aria-label="Facebook ISTD Kalehe"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="mailto:istdkalehe@gmail.com" aria-label="Email ISTD Kalehe"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="vie-etudiante.html">Vie étudiante</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="galerie.html">Galerie photos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <ul class="footer-links">
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Bidabanga, Territoire de Kalehe, Sud-Kivu, RDC</li>
+          <li><i class="fa-solid fa-phone"></i> +243 999 027 786</li>
+          <li><i class="fa-solid fa-envelope"></i> istdkalehe@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="current-year"></span> ISTD KALEHE — Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+  <script src="../js/actualites-loader.js"></script>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

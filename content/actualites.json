@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Ouverture des inscriptions — Année académique 2026-2027",
+      "date": "2026-09-15",
+      "icon": "fa-solid fa-graduation-cap",
+      "body": "L'ISTD Kalehe annonce l'ouverture officielle des inscriptions pour la nouvelle année académique. Consultez la page Admissions pour connaître la procédure et les documents requis.",
+      "link_text": "Voir les admissions",
+      "link_url": "admissions.html"
+    },
+    {
+      "title": "Cérémonie de graduation de la promotion 2026",
+      "date": "2026-07-20",
+      "icon": "fa-solid fa-award",
+      "body": "Retour en images sur la cérémonie de remise des diplômes, qui a célébré la réussite de nos étudiants finalistes en présence des autorités locales.",
+      "link_text": "Voir la galerie",
+      "link_url": "galerie.html"
+    },
+    {
+      "title": "Journée portes ouvertes du campus de Bidabanga",
+      "date": "2026-05-05",
+      "icon": "fa-solid fa-people-group",
+      "body": "L'ISTD Kalehe a organisé une journée portes ouvertes pour présenter ses filières, son internat et sa salle informatique aux futurs étudiants et à leurs familles.",
+      "link_text": "Découvrir le campus",
+      "link_url": "vie-etudiante.html"
+    }
+  ]
+}

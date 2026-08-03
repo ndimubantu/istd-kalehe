@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ISTD Kalehe</title>
+  <meta name="description" content="Contactez l'ISTD Kalehe : adresse, téléphones, emails, Facebook et formulaire de contact.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="../images/logo-istd.png">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .contact-form-group {
+      margin-bottom: 20px;
+    }
+    .contact-form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .contact-form-group input,
+    .contact-form-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1px solid var(--gray-border);
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .contact-form-group input:focus,
+    .contact-form-group textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(245,184,0,0.2);
+    }
+    .map-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      line-height: 0;
+    }
+    .map-wrap iframe {
+      width: 100%;
+      height: 340px;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/logo-istd.png" alt="Logo ISTD Kalehe" class="logo-icon">
+        <div class="logo-text-wrap">
+          <span class="logo-title">ISTD KALEHE</span>
+          <span class="logo-slogan">Apprendre, Innover, Réussir</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Accueil</a></li>
+          <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+          <li><a href="programmes.html" class="nav-link">Programmes</a></li>
+          <li><a href="vie-etudiante.html" class="nav-link">Vie étudiante</a></li>
+          <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </header>
+
+  <!-- ===================== BANNIÈRE ===================== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Accueil</a> / Contact</p>
+      <h1>Contactez-nous</h1>
+    </div>
+    <div class="topo-divider"></div>
+  </section>
+
+  <!-- ===================== COORDONNÉES ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="card-grid mb-40">
+        <div class="card reveal text-center">
+          <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="card-title">Adresse</h3>
+          <p class="card-text">Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC</p>
+        </div>
+        <div class="card reveal text-center">
+          <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="card-title">Horaires</h3>
+          <p class="card-text">Bureau des inscriptions : Lundi – Samedi, 8h00 – 15h00</p>
+        </div>
+        <div class="card reveal text-center">
+          <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-phone"></i></div>
+          <h3 class="card-title">Téléphones</h3>
+          <p class="card-text">
+            Secrétariat Général Académique : +243 999 027 786<br>
+            Direction Générale : +243 892 303 716
+          </p>
+        </div>
+        <div class="card reveal text-center">
+          <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-envelope"></i></div>
+          <h3 class="card-title">Emails</h3>
+          <p class="card-text">
+            istdkalehe@gmail.com<br>
+            istdkalehe@yahoo.fr
+          </p>
+        </div>
+      </div>
+
+      <p class="text-center mb-40">
+        <a href="https://facebook.com/istd.kalehe" target="_blank" rel="noopener" style="color:var(--navy); font-weight:700;">
+          <i class="fa-brands fa-facebook-f" style="color:#1877F2; margin-right:8px;"></i> facebook.com/istd.kalehe
+        </a>
+      </p>
+
+      <!-- ===================== CARTE + FORMULAIRE ===================== -->
+      <div class="two-col">
+        <div class="reveal-left">
+          <h2 class="section-title" style="font-size:1.5rem; margin-bottom:20px;">Notre localisation</h2>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps?q=Kalehe,Sud-Kivu,RDC&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte — ISTD Kalehe, Bidabanga, Sud-Kivu">
+            </iframe>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.82rem; margin-top:10px;">
+            Position approximative — coordonnées GPS exactes du campus à confirmer.
+          </p>
+        </div>
+
+        <div class="reveal-right">
+          <h2 class="section-title" style="font-size:1.5rem; margin-bottom:20px;">Envoyez-nous un message</h2>
+          <form id="contact-form">
+            <div class="contact-form-group">
+              <label for="cf-name">Nom complet</label>
+              <input type="text" id="cf-name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="contact-form-group">
+              <label for="cf-email">Adresse email</label>
+              <input type="email" id="cf-email" name="email" required placeholder="vous@exemple.com">
+            </div>
+            <div class="contact-form-group">
+              <label for="cf-subject">Sujet</label>
+              <input type="text" id="cf-subject" name="subject" required placeholder="Objet de votre message">
+            </div>
+            <div class="contact-form-group">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Envoyer par email</button>
+          </form>
+          <p style="color:var(--text-muted); font-size:0.82rem; margin-top:14px;">
+            <i class="fa-solid fa-circle-info"></i> Ce formulaire ouvre votre application email par défaut
+            (aucune donnée n'est envoyée à un serveur).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/logo-istd.png" alt="Logo ISTD Kalehe" class="logo-icon">
+          <span class="logo-title">ISTD KALEHE</span>
+        </div>
+        <p class="footer-signature">« Le savoir au service de votre avenir »</p>
+        <p class="footer-signature">« Étudier ici, c'est se donner les moyens de réussir demain. »</p>
+        <div class="social-links">
+          <a href="https://facebook.com/istd.kalehe" target="_blank" rel="noopener" aria-label="Facebook ISTD Kalehe"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="mailto:istdkalehe@gmail.com" aria-label="Email ISTD Kalehe"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liens rapides</h4>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="vie-etudiante.html">Vie étudiante</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="galerie.html">Galerie photos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Institution</h4>
+        <ul class="footer-links">
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Bidabanga, Territoire de Kalehe, Sud-Kivu, RDC</li>
+          <li><i class="fa-solid fa-phone"></i> +243 999 027 786</li>
+          <li><i class="fa-solid fa-envelope"></i> istdkalehe@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="current-year"></span> ISTD KALEHE — Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/scroll-animations.js"></script>
+  <script src="../js/contact-form.js"></script>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

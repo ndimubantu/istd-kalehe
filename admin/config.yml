@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: Ndimubantu/istd-kalehe
+  branch: main
+
+# Dossier où les photos ajoutées depuis l'admin seront rangées
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+locale: "fr"
+
+collections:
+  - name: "actualites"
+    label: "Actualités"
+    files:
+      - file: "content/actualites.json"
+        label: "Liste des actualités"
+        name: "actualites"
+        fields:
+          - label: "Articles"
+            name: "items"
+            widget: "list"
+            label_singular: "Article"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY" }
+              - label: "Icône"
+                name: "icon"
+                widget: "select"
+                default: "fa-solid fa-bullhorn"
+                options:
+                  - { label: "Mégaphone (annonce générale)", value: "fa-solid fa-bullhorn" }
+                  - { label: "Diplôme (graduation)", value: "fa-solid fa-graduation-cap" }
+                  - { label: "Trophée / distinction", value: "fa-solid fa-award" }
+                  - { label: "Groupe de personnes / événement", value: "fa-solid fa-people-group" }
+                  - { label: "Livre / académique", value: "fa-solid fa-book-open" }
+                  - { label: "Calendrier", value: "fa-solid fa-calendar-days" }
+              - { label: "Résumé (2-3 phrases)", name: "body", widget: "text" }
+              - { label: "Texte du lien (ex: « Voir les admissions »)", name: "link_text", widget: "string", required: false, default: "En savoir plus" }
+              - { label: "Page liée (ex: admissions.html, galerie.html)", name: "link_url", widget: "string", required: false, default: "#" }
+
+  - name: "galerie"
+    label: "Galerie photos"
+    files:
+      - file: "content/galerie.json"
+        label: "Photos de la galerie"
+        name: "galerie"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            label_singular: "Photo"
+            summary: "{{fields.category}} — {{fields.title}}"
+            fields:
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Campus"
+                  - "Vie étudiante"
+                  - "Cérémonies / Graduations"
+                  - "Activités académiques"
+                  - "Infrastructures"
+              - { label: "Légende / texte alternatif", name: "title", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image", required: false, choose_url: false }

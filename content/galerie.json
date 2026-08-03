@@ -1,0 +1,28 @@
+{
+  "items": [
+    { "category": "Campus", "title": "Campus de l'ISTD Kalehe", "image": "" },
+    { "category": "Campus", "title": "Campus de l'ISTD Kalehe", "image": "" },
+    { "category": "Campus", "title": "Campus de l'ISTD Kalehe", "image": "" },
+    { "category": "Campus", "title": "Campus de l'ISTD Kalehe", "image": "" },
+
+    { "category": "Vie étudiante", "title": "Vie étudiante à l'ISTD Kalehe", "image": "" },
+    { "category": "Vie étudiante", "title": "Vie étudiante à l'ISTD Kalehe", "image": "" },
+    { "category": "Vie étudiante", "title": "Vie étudiante à l'ISTD Kalehe", "image": "" },
+    { "category": "Vie étudiante", "title": "Vie étudiante à l'ISTD Kalehe", "image": "" },
+
+    { "category": "Cérémonies / Graduations", "title": "Cérémonie de graduation", "image": "" },
+    { "category": "Cérémonies / Graduations", "title": "Cérémonie de graduation", "image": "" },
+    { "category": "Cérémonies / Graduations", "title": "Cérémonie de graduation", "image": "" },
+    { "category": "Cérémonies / Graduations", "title": "Cérémonie de graduation", "image": "" },
+
+    { "category": "Activités académiques", "title": "Activité académique", "image": "" },
+    { "category": "Activités académiques", "title": "Activité académique", "image": "" },
+    { "category": "Activités académiques", "title": "Activité académique", "image": "" },
+    { "category": "Activités académiques", "title": "Activité académique", "image": "" },
+
+    { "category": "Infrastructures", "title": "Salle informatique de l'ISTD Kalehe", "image": "/images/labo_info.jpg" },
+    { "category": "Infrastructures", "title": "Infrastructures de l'ISTD Kalehe", "image": "" },
+    { "category": "Infrastructures", "title": "Infrastructures de l'ISTD Kalehe", "image": "" },
+    { "category": "Infrastructures", "title": "Infrastructures de l'ISTD Kalehe", "image": "" }
+  ]
+}

@@ -1,0 +1,82 @@
+/* =====================================================
+   ISTD KALEHE — Animations légères au scroll (CSS pur)
+   Les classes .visible sont ajoutées par js/scroll-animations.js
+   via IntersectionObserver
+   ===================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Décalage progressif pour les grilles de cartes */
+.card-grid .reveal:nth-child(1) { transition-delay: 0s; }
+.card-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.card-grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+.card-grid .reveal:nth-child(4) { transition-delay: 0.3s; }
+.card-grid .reveal:nth-child(5) { transition-delay: 0.4s; }
+
+/* Respect des préférences de réduction de mouvement */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Effet grayscale -> couleur au survol (logos partenaires) */
+.grayscale-hover {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter var(--transition), opacity var(--transition), transform var(--transition);
+}
+
+.grayscale-hover:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-4px);
+}

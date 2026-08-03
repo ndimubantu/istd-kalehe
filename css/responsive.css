@@ -1,0 +1,128 @@
+/* =====================================================
+   ISTD KALEHE — Media queries (mobile / tablette / desktop)
+   ===================================================== */
+
+/* --- Tablette (<= 992px) --- */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* --- Menu hamburger (<= 860px) --- */
+@media (max-width: 860px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 78%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--forest);
+    box-shadow: -6px 0 25px rgba(15,33,27,0.3);
+    transition: right 0.35s ease;
+    padding: 100px 30px 30px;
+    z-index: 1050;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .main-nav .nav-list {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .main-nav .nav-link {
+    padding: 14px 10px;
+    font-size: 1.05rem;
+    color: var(--paper);
+    border-bottom: 1px solid rgba(246,242,231,0.12);
+  }
+
+  .main-nav .nav-link:hover,
+  .main-nav .nav-link.active {
+    color: var(--gold-light);
+  }
+
+  .main-nav .nav-list li:nth-child(6) .nav-link {
+    background: var(--gold);
+    color: var(--ink);
+  }
+
+  .main-nav .nav-list li:nth-child(6) .nav-link:hover {
+    background: var(--gold-light);
+    color: var(--ink);
+  }
+
+  .nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 33, 27, 0.6);
+    z-index: 1040;
+  }
+
+  .nav-overlay.active {
+    display: block;
+  }
+}
+
+/* --- Mobile (<= 640px) --- */
+@media (max-width: 640px) {
+  .section {
+    padding: 55px 0;
+  }
+
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-banner h1 {
+    font-size: 1.6rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
