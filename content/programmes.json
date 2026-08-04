@@ -1,0 +1,51 @@
+{
+  "banner": { "title": "Nos programmes académiques" },
+  "lmd_intro": {
+    "tag": "Système LMD",
+    "title": "Le système Licence-Maîtrise-Doctorat",
+    "subtitle": "L'ISTD Kalehe adopte fièrement le système Licence-Maîtrise-Doctorat (LMD), un cadre pédagogique moderne et harmonisé.",
+    "cards": [
+      { "title": "Reconnaissance internationale", "text": "Des diplômes reconnus et valorisés partout dans le monde, facilitant les études supérieures et la carrière à l'étranger." },
+      { "title": "Flexibilité et modularité", "text": "Un parcours académique adaptable, avec des unités d'enseignement capitalisables et transférables." },
+      { "title": "Professionnalisation accrue", "text": "Des programmes axés sur les compétences pratiques et l'employabilité, en collaboration avec le monde professionnel." }
+    ]
+  },
+  "licence": {
+    "tag": "Premier cycle",
+    "title": "Licence LMD",
+    "filieres": [
+      {
+        "title": "Techniques Agricoles",
+        "quote": "« Formant des Ingénieurs Agronomes professionnels de la production agricole moderne ! »",
+        "bullets": [
+          "Pratiques agricoles innovantes",
+          "Contribution à la sécurité alimentaire et au développement rural",
+          "Compétences pour travailler avec ONG, coopératives et exploitations agricoles",
+          "Lancement d'initiatives agricoles et entrepreneuriat vert"
+        ]
+      },
+      {
+        "title": "Développement Rural",
+        "quote": "« Cette filière pluridisciplinaire vous prépare à devenir des acteurs du changement dans divers domaines. Formez-vous aujourd'hui pour transformer demain ! »",
+        "bullets": [
+          "Devenir acteur du développement durable",
+          "Base solide pour plusieurs spécialisations",
+          "Contribution à la sécurité alimentaire et à la lutte contre la pauvreté",
+          "Opportunités dans les ONG, projets et institutions"
+        ]
+      }
+    ]
+  },
+  "maitrise": {
+    "tag": "Deuxième cycle",
+    "title": "Maîtrise LMD",
+    "cards": [
+      { "title": "Environnement et Développement Durable", "text": "Étudiez les défis environnementaux, la gestion des ressources naturelles et les stratégies de développement respectueuses de l'écosystème." },
+      { "title": "Gestion des entreprises", "text": "Acquérez les compétences nécessaires pour diriger, gérer et innover dans le monde des affaires. Du marketing à la finance, devenez un leader capable de créer de la valeur et des emplois." },
+      { "title": "Organisation sociale", "text": "Comprenez les dynamiques sociales, les politiques publiques et la gestion des projets communautaires. Œuvrez pour le bien-être social et le renforcement des structures associatives." },
+      { "title": "Production végétale", "text": "Formant des experts en gestion agricole moderne, cette filière est cruciale pour la sécurité alimentaire et l'innovation dans le secteur primaire." }
+    ]
+  },
+  "info_box": "Les candidats détenteurs du diplôme de graduat de l'ancien système qui souhaitent s'inscrire au deuxième cycle dans le nouveau système LMD sont aussi les bienvenus, mais pourront avoir quelques cours complémentaires.",
+  "cta": { "link_text": "Voir la procédure d'admission" }
+}

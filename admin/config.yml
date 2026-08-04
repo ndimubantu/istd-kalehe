@@ -11,6 +11,72 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "programmes"
+    label: "Page Programmes"
+    files:
+      - file: "content/programmes.json"
+        label: "Contenu de la page Programmes"
+        name: "programmes"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Intro système LMD"
+            name: "lmd_intro"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+              - label: "Les 3 cartes"
+                name: "cards"
+                widget: "list"
+                label_singular: "Carte"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+          - label: "Premier cycle (Licence)"
+            name: "licence"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - label: "Filières"
+                name: "filieres"
+                widget: "list"
+                label_singular: "Filière"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Nom de la filière", name: "title", widget: "string" }
+                  - { label: "Citation / accroche", name: "quote", widget: "text" }
+                  - label: "Points clés"
+                    name: "bullets"
+                    widget: "list"
+                    field: { label: "Point", name: "item", widget: "string" }
+          - label: "Deuxième cycle (Maîtrise)"
+            name: "maitrise"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - label: "Les 4 cartes"
+                name: "cards"
+                widget: "list"
+                label_singular: "Carte"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+          - { label: "Encart d'information (candidats de l'ancien système)", name: "info_box", widget: "text" }
+          - label: "Bouton d'appel à l'action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Texte du bouton", name: "link_text", widget: "string" }
+
   - name: "a-propos"
     label: "Page À propos"
     files:

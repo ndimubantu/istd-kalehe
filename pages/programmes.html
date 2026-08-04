@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body>
+<body data-content="programmes">
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -50,7 +50,7 @@
   <section class="page-banner">
     <div class="container">
       <p class="breadcrumb"><a href="../index.html">Accueil</a> / Programmes</p>
-      <h1>Nos programmes académiques</h1>
+      <h1 data-field="banner.title">Nos programmes académiques</h1>
     </div>
     <div class="topo-divider"></div>
   </section>
@@ -59,9 +59,9 @@
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Système LMD</span>
-        <h2 class="section-title underline-gold">Le système Licence-Maîtrise-Doctorat</h2>
-        <p class="section-subtitle">
+        <span class="section-tag" data-field="lmd_intro.tag">Système LMD</span>
+        <h2 class="section-title underline-gold" data-field="lmd_intro.title">Le système Licence-Maîtrise-Doctorat</h2>
+        <p class="section-subtitle" data-field="lmd_intro.subtitle">
           L'ISTD Kalehe adopte fièrement le système Licence-Maîtrise-Doctorat (LMD), un cadre
           pédagogique moderne et harmonisé.
         </p>
@@ -70,18 +70,18 @@
       <div class="card-grid">
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-earth-africa"></i></div>
-          <h3 class="card-title">Reconnaissance internationale</h3>
-          <p class="card-text">Des diplômes reconnus et valorisés partout dans le monde, facilitant les études supérieures et la carrière à l'étranger.</p>
+          <h3 class="card-title" data-field="lmd_intro.cards.0.title">Reconnaissance internationale</h3>
+          <p class="card-text" data-field="lmd_intro.cards.0.text">Des diplômes reconnus et valorisés partout dans le monde, facilitant les études supérieures et la carrière à l'étranger.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
-          <h3 class="card-title">Flexibilité et modularité</h3>
-          <p class="card-text">Un parcours académique adaptable, avec des unités d'enseignement capitalisables et transférables.</p>
+          <h3 class="card-title" data-field="lmd_intro.cards.1.title">Flexibilité et modularité</h3>
+          <p class="card-text" data-field="lmd_intro.cards.1.text">Un parcours académique adaptable, avec des unités d'enseignement capitalisables et transférables.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <h3 class="card-title">Professionnalisation accrue</h3>
-          <p class="card-text">Des programmes axés sur les compétences pratiques et l'employabilité, en collaboration avec le monde professionnel.</p>
+          <h3 class="card-title" data-field="lmd_intro.cards.2.title">Professionnalisation accrue</h3>
+          <p class="card-text" data-field="lmd_intro.cards.2.text">Des programmes axés sur les compétences pratiques et l'employabilité, en collaboration avec le monde professionnel.</p>
         </div>
       </div>
     </div>
@@ -91,8 +91,8 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Premier cycle</span>
-        <h2 class="section-title underline-gold">Licence LMD</h2>
+        <span class="section-tag" data-field="licence.tag">Premier cycle</span>
+        <h2 class="section-title underline-gold" data-field="licence.title">Licence LMD</h2>
       </div>
 
       <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
@@ -101,29 +101,29 @@
             <i class="fa-solid fa-wheat-awn"></i>
             <span>Photo à venir — Techniques Agricoles</span>
           </div>
-          <h3 class="card-title">Techniques Agricoles</h3>
-          <p class="card-text" style="font-style:italic; color:var(--navy); font-weight:600;">
+          <h3 class="card-title" data-field="licence.filieres.0.title">Techniques Agricoles</h3>
+          <p class="card-text" style="font-style:italic; color:var(--navy); font-weight:600;" data-field="licence.filieres.0.quote">
             « Formant des Ingénieurs Agronomes professionnels de la production agricole moderne ! »
           </p>
           <ul class="icon-list check">
-            <li><i class="fa-solid fa-check"></i> Pratiques agricoles innovantes</li>
-            <li><i class="fa-solid fa-check"></i> Contribution à la sécurité alimentaire et au développement rural</li>
-            <li><i class="fa-solid fa-check"></i> Compétences pour travailler avec ONG, coopératives et exploitations agricoles</li>
-            <li><i class="fa-solid fa-check"></i> Lancement d'initiatives agricoles et entrepreneuriat vert</li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.0.bullets.0">Pratiques agricoles innovantes</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.0.bullets.1">Contribution à la sécurité alimentaire et au développement rural</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.0.bullets.2">Compétences pour travailler avec ONG, coopératives et exploitations agricoles</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.0.bullets.3">Lancement d'initiatives agricoles et entrepreneuriat vert</span></li>
           </ul>
         </div>
 
         <div class="card reveal">
           <img src="../images/developpement_rural.jpg" alt="Étudiants et personnel de l'ISTD Kalehe, filière Développement Rural" style="width:100%; height:auto; border-radius:var(--radius); margin-bottom:20px;">
-          <h3 class="card-title">Développement Rural <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Tronc commun)</span></h3>
-          <p class="card-text" style="font-style:italic; color:var(--navy); font-weight:600;">
+          <h3 class="card-title"><span data-field="licence.filieres.1.title">Développement Rural</span> <span style="font-size:0.7rem; color:var(--text-muted); font-weight:400;">(Tronc commun)</span></h3>
+          <p class="card-text" style="font-style:italic; color:var(--navy); font-weight:600;" data-field="licence.filieres.1.quote">
             « Cette filière pluridisciplinaire vous prépare à devenir des acteurs du changement dans divers domaines. Formez-vous aujourd'hui pour transformer demain ! »
           </p>
           <ul class="icon-list check">
-            <li><i class="fa-solid fa-check"></i> Devenir acteur du développement durable</li>
-            <li><i class="fa-solid fa-check"></i> Base solide pour plusieurs spécialisations</li>
-            <li><i class="fa-solid fa-check"></i> Contribution à la sécurité alimentaire et à la lutte contre la pauvreté</li>
-            <li><i class="fa-solid fa-check"></i> Opportunités dans les ONG, projets et institutions</li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.1.bullets.0">Devenir acteur du développement durable</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.1.bullets.1">Base solide pour plusieurs spécialisations</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.1.bullets.2">Contribution à la sécurité alimentaire et à la lutte contre la pauvreté</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="licence.filieres.1.bullets.3">Opportunités dans les ONG, projets et institutions</span></li>
           </ul>
         </div>
       </div>
@@ -134,39 +134,39 @@
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Deuxième cycle</span>
-        <h2 class="section-title underline-gold">Maîtrise LMD</h2>
+        <span class="section-tag" data-field="maitrise.tag">Deuxième cycle</span>
+        <h2 class="section-title underline-gold" data-field="maitrise.title">Maîtrise LMD</h2>
       </div>
 
       <div class="card-grid">
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
-          <h3 class="card-title">Environnement et Développement Durable</h3>
-          <p class="card-text">Étudiez les défis environnementaux, la gestion des ressources naturelles et les stratégies de développement respectueuses de l'écosystème.</p>
+          <h3 class="card-title" data-field="maitrise.cards.0.title">Environnement et Développement Durable</h3>
+          <p class="card-text" data-field="maitrise.cards.0.text">Étudiez les défis environnementaux, la gestion des ressources naturelles et les stratégies de développement respectueuses de l'écosystème.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h3 class="card-title">Gestion des entreprises</h3>
-          <p class="card-text">Acquérez les compétences nécessaires pour diriger, gérer et innover dans le monde des affaires. Du marketing à la finance, devenez un leader capable de créer de la valeur et des emplois.</p>
+          <h3 class="card-title" data-field="maitrise.cards.1.title">Gestion des entreprises</h3>
+          <p class="card-text" data-field="maitrise.cards.1.text">Acquérez les compétences nécessaires pour diriger, gérer et innover dans le monde des affaires. Du marketing à la finance, devenez un leader capable de créer de la valeur et des emplois.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-          <h3 class="card-title">Organisation sociale</h3>
-          <p class="card-text">Comprenez les dynamiques sociales, les politiques publiques et la gestion des projets communautaires. Œuvrez pour le bien-être social et le renforcement des structures associatives.</p>
+          <h3 class="card-title" data-field="maitrise.cards.2.title">Organisation sociale</h3>
+          <p class="card-text" data-field="maitrise.cards.2.text">Comprenez les dynamiques sociales, les politiques publiques et la gestion des projets communautaires. Œuvrez pour le bien-être social et le renforcement des structures associatives.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-          <h3 class="card-title">Production végétale</h3>
-          <p class="card-text">Formant des experts en gestion agricole moderne, cette filière est cruciale pour la sécurité alimentaire et l'innovation dans le secteur primaire.</p>
+          <h3 class="card-title" data-field="maitrise.cards.3.title">Production végétale</h3>
+          <p class="card-text" data-field="maitrise.cards.3.text">Formant des experts en gestion agricole moderne, cette filière est cruciale pour la sécurité alimentaire et l'innovation dans le secteur primaire.</p>
         </div>
       </div>
 
       <div class="reveal mt-40" style="background:var(--gray-bg); border-left:4px solid var(--gold); padding:20px 26px; border-radius:8px;">
         <p style="color:var(--text-muted); font-size:0.95rem;">
           <i class="fa-solid fa-circle-info" style="color:var(--gold-dark); margin-right:8px;"></i>
-          Les candidats détenteurs du diplôme de graduat de l'ancien système qui souhaitent s'inscrire
+          <span data-field="info_box">Les candidats détenteurs du diplôme de graduat de l'ancien système qui souhaitent s'inscrire
           au deuxième cycle dans le nouveau système LMD sont aussi les bienvenus, mais pourront avoir
-          quelques cours complémentaires.
+          quelques cours complémentaires.</span>
         </p>
       </div>
     </div>
@@ -175,7 +175,7 @@
   <!-- ===================== CTA ===================== -->
   <section class="quote-banner">
     <div class="container reveal-scale">
-      <a href="admissions.html" class="btn btn-primary"><i class="fa-solid fa-graduation-cap"></i> Voir la procédure d'admission</a>
+      <a href="admissions.html" class="btn btn-primary"><i class="fa-solid fa-graduation-cap"></i> <span data-field="cta.link_text">Voir la procédure d'admission</span></a>
     </div>
   </section>
 
@@ -229,6 +229,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/scroll-animations.js"></script>
   <script src="../js/site-settings-loader.js"></script>
+  <script src="../js/page-content-loader.js"></script>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
