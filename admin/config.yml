@@ -11,6 +11,29 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "site"
+    label: "Réglages du site"
+    files:
+      - file: "content/site.json"
+        label: "Slogan et coordonnées (toutes les pages)"
+        name: "site"
+        fields:
+          - { label: "Slogan (sous le logo, en-tête)", name: "slogan", widget: "string" }
+          - label: "Phrases du pied de page"
+            name: "footer_taglines"
+            widget: "list"
+            label_singular: "Phrase"
+            summary: "{{fields.tagline}}"
+            fields:
+              - { label: "Phrase", name: "tagline", widget: "string" }
+          - label: "Coordonnées de contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Adresse", name: "address", widget: "string" }
+              - { label: "Téléphone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+
   - name: "actualites"
     label: "Actualités"
     files:
