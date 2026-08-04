@@ -11,6 +11,31 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "contact"
+    label: "Page Contact"
+    files:
+      - file: "content/contact.json"
+        label: "Contenu de la page Contact"
+        name: "contact"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Cartes de coordonnées"
+            name: "cards"
+            widget: "object"
+            fields:
+              - { label: "Adresse", name: "address", widget: "text" }
+              - { label: "Horaires", name: "hours", widget: "string" }
+              - { label: "Téléphone 1 (Secrétariat)", name: "phone_1", widget: "string" }
+              - { label: "Téléphone 2 (Direction)", name: "phone_2", widget: "string" }
+              - { label: "Email 1", name: "email_1", widget: "string" }
+              - { label: "Email 2", name: "email_2", widget: "string" }
+          - { label: "Note sous la carte", name: "map_note", widget: "string" }
+          - { label: "Note sous le formulaire", name: "form_note", widget: "text" }
+
   - name: "admissions"
     label: "Page Admissions"
     files:

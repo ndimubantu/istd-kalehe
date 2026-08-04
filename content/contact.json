@@ -1,0 +1,13 @@
+{
+  "banner": { "title": "Contactez-nous" },
+  "cards": {
+    "address": "Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC",
+    "hours": "Bureau des inscriptions : Lundi – Samedi, 8h00 – 15h00",
+    "phone_1": "Secrétariat Général Académique : +243 999 027 786",
+    "phone_2": "Direction Générale : +243 892 303 716",
+    "email_1": "istdkalehe@gmail.com",
+    "email_2": "istdkalehe@yahoo.fr"
+  },
+  "map_note": "Position approximative — coordonnées GPS exactes du campus à confirmer.",
+  "form_note": "Ce formulaire ouvre votre application email par défaut (aucune donnée n'est envoyée à un serveur)."
+}

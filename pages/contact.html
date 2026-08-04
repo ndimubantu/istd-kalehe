@@ -55,7 +55,7 @@
     }
   </style>
 </head>
-<body>
+<body data-content="contact">
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -90,7 +90,7 @@
   <section class="page-banner">
     <div class="container">
       <p class="breadcrumb"><a href="../index.html">Accueil</a> / Contact</p>
-      <h1>Contactez-nous</h1>
+      <h1 data-field="banner.title">Contactez-nous</h1>
     </div>
     <div class="topo-divider"></div>
   </section>
@@ -102,27 +102,27 @@
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-location-dot"></i></div>
           <h3 class="card-title">Adresse</h3>
-          <p class="card-text">Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC</p>
+          <p class="card-text" data-field="cards.address">Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC</p>
         </div>
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-clock"></i></div>
           <h3 class="card-title">Horaires</h3>
-          <p class="card-text">Bureau des inscriptions : Lundi – Samedi, 8h00 – 15h00</p>
+          <p class="card-text" data-field="cards.hours">Bureau des inscriptions : Lundi – Samedi, 8h00 – 15h00</p>
         </div>
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-phone"></i></div>
           <h3 class="card-title">Téléphones</h3>
           <p class="card-text">
-            Secrétariat Général Académique : +243 999 027 786<br>
-            Direction Générale : +243 892 303 716
+            <span data-field="cards.phone_1">Secrétariat Général Académique : +243 999 027 786</span><br>
+            <span data-field="cards.phone_2">Direction Générale : +243 892 303 716</span>
           </p>
         </div>
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-envelope"></i></div>
           <h3 class="card-title">Emails</h3>
           <p class="card-text">
-            istdkalehe@gmail.com<br>
-            istdkalehe@yahoo.fr
+            <span data-field="cards.email_1">istdkalehe@gmail.com</span><br>
+            <span data-field="cards.email_2">istdkalehe@yahoo.fr</span>
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@
               title="Carte — ISTD Kalehe, Bidabanga, Sud-Kivu">
             </iframe>
           </div>
-          <p style="color:var(--text-muted); font-size:0.82rem; margin-top:10px;">
+          <p style="color:var(--text-muted); font-size:0.82rem; margin-top:10px;" data-field="map_note">
             Position approximative — coordonnées GPS exactes du campus à confirmer.
           </p>
         </div>
@@ -172,8 +172,8 @@
             <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Envoyer par email</button>
           </form>
           <p style="color:var(--text-muted); font-size:0.82rem; margin-top:14px;">
-            <i class="fa-solid fa-circle-info"></i> Ce formulaire ouvre votre application email par défaut
-            (aucune donnée n'est envoyée à un serveur).
+            <i class="fa-solid fa-circle-info"></i> <span data-field="form_note">Ce formulaire ouvre votre application email par défaut
+            (aucune donnée n'est envoyée à un serveur).</span>
           </p>
         </div>
       </div>
@@ -230,6 +230,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/scroll-animations.js"></script>
   <script src="../js/site-settings-loader.js"></script>
+  <script src="../js/page-content-loader.js"></script>
   <script src="../js/contact-form.js"></script>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
