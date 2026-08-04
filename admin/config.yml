@@ -11,6 +11,57 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "vie-etudiante"
+    label: "Page Vie étudiante"
+    files:
+      - file: "content/vie-etudiante.json"
+        label: "Contenu de la page Vie étudiante"
+        name: "vie-etudiante"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Internat"
+            name: "internat"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+              - label: "Les 3 cartes"
+                name: "cards"
+                widget: "list"
+                label_singular: "Carte"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+          - label: "Salle informatique / Numérique"
+            name: "numerique"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+              - label: "Encart Starlink"
+                name: "highlight"
+                widget: "object"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+              - label: "Nos atouts (liste)"
+                name: "atouts"
+                widget: "list"
+                field: { label: "Point", name: "item", widget: "string" }
+              - label: "Bénéfices pour l'étudiant (liste)"
+                name: "benefices"
+                widget: "list"
+                field: { label: "Point", name: "item", widget: "string" }
+              - { label: "Note de bas de section", name: "note", widget: "text" }
+          - { label: "Citation", name: "quote", widget: "string" }
+
   - name: "programmes"
     label: "Page Programmes"
     files:

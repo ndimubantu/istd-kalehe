@@ -1,0 +1,38 @@
+{
+  "banner": { "title": "Vie étudiante & Services" },
+  "internat": {
+    "tag": "Hébergement",
+    "title": "Un cadre de vie optimal : notre internat",
+    "subtitle": "Conscient des défis liés à l'éloignement, l'ISTD Kalehe met à disposition un internat moderne et confortable pour tous les étudiants, qu'ils viennent de loin ou souhaitent une immersion totale dans leur parcours académique.",
+    "cards": [
+      { "title": "Sécurité et confort", "text": "Un environnement propice à l'étude et au repos." },
+      { "title": "Communauté étudiante", "text": "Favorise les échanges, le travail de groupe et les amitiés durables." },
+      { "title": "Accès facilité", "text": "Proximité des salles de cours et des infrastructures de l'institut." }
+    ]
+  },
+  "numerique": {
+    "tag": "Numérique",
+    "title": "Pourquoi choisir l'enseignement supérieur à l'ISTD Kalehe ?",
+    "subtitle": "L'ISTD KALEHE met à la disposition de ses étudiants une salle d'informatique moderne et équipée pour répondre aux exigences de la formation de qualité au 21e siècle.",
+    "highlight": {
+      "title": "Connexion Wi-Fi Starlink",
+      "text": "Internet haut débit pour la recherche, l'apprentissage en ligne et l'accès aux ressources mondiales."
+    },
+    "atouts": [
+      "Salle d'informatique moderne",
+      "Parc important d'ordinateurs",
+      "Outils de recherche et logiciels spécialisés",
+      "Connexion Internet haut débit Starlink",
+      "Encadrement de qualité et accompagnement"
+    ],
+    "benefices": [
+      "Accès facile à l'information et aux bibliothèques numériques",
+      "Développement des compétences numériques",
+      "Réalisation des travaux et recherches en ligne",
+      "Meilleure préparation au monde professionnel",
+      "Ouverture sur le monde et les innovations"
+    ],
+    "note": "Connectivité assurée en partenariat avec Starlink, avec l'appui de la Cellule de Communication de l'ISTD Kalehe."
+  },
+  "quote": "« La technologie est aujourd'hui la clé du savoir et de la réussite. »"
+}
