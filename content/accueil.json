@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "eyebrow": "Bidabanga — Kalehe — Sud-Kivu, RDC",
+    "title": "Institut Supérieur des Techniques de Développement de Kalehe",
+    "subtitle": "Établissement d'enseignement supérieur organisé selon le système LMD, l'ISTD Kalehe forme des techniciens et cadres compétents dans les domaines du développement rural, de l'agronomie et de la gestion, au service de Kalehe et de la région du Sud-Kivu.",
+    "cta_primary": "S'inscrire maintenant",
+    "cta_secondary": "Découvrir nos filières"
+  },
+  "explorer": {
+    "tag": "À la une",
+    "title": "Explorez l'ISTD Kalehe",
+    "subtitle": "Tout ce qu'il faut savoir pour bien démarrer votre parcours avec nous."
+  },
+  "feature": {
+    "tag": "Présentation",
+    "title": "Présentation de l'ISTD Kalehe",
+    "text": "Une institution engagée dans la formation d'agents de développement compétents et éthiques pour Kalehe et au-delà.",
+    "link_text": "En savoir plus"
+  },
+  "cards": [
+    {
+      "title": "Pourquoi choisir l'ISTD Kalehe ?",
+      "text": "Un corps enseignant d'élite, un encadrement personnalisé et une pédagogie innovante au service de votre réussite.",
+      "link_text": "En savoir plus"
+    },
+    {
+      "title": "Nos programmes académiques (LMD)",
+      "text": "Un système Licence-Maîtrise-Doctorat moderne, reconnu à l'international et tourné vers l'employabilité.",
+      "link_text": "Voir les filières"
+    },
+    {
+      "title": "Vie étudiante et services",
+      "text": "Internat moderne, salle informatique équipée et connexion Internet haut débit Starlink.",
+      "link_text": "Découvrir"
+    },
+    {
+      "title": "Comment s'inscrire",
+      "text": "Toutes les informations et documents requis pour rejoindre l'ISTD Kalehe dès cette année académique.",
+      "link_text": "Voir la procédure"
+    }
+  ],
+  "quote": "« La technologie est aujourd'hui la clé du savoir et de la réussite. »"
+}

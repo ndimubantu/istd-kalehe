@@ -11,6 +11,48 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "accueil"
+    label: "Page d'accueil"
+    files:
+      - file: "content/accueil.json"
+        label: "Contenu de la page d'accueil"
+        name: "accueil"
+        fields:
+          - label: "En-tête (hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Petite ligne au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre principal", name: "title", widget: "string" }
+              - { label: "Paragraphe d'introduction", name: "subtitle", widget: "text" }
+              - { label: "Texte du bouton principal", name: "cta_primary", widget: "string" }
+              - { label: "Texte du bouton secondaire", name: "cta_secondary", widget: "string" }
+          - label: "Section \"Explorez l'ISTD Kalehe\""
+            name: "explorer"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "string" }
+          - label: "Bloc \"Présentation\""
+            name: "feature"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+              - { label: "Texte du lien", name: "link_text", widget: "string" }
+          - label: "Les 4 cartes"
+            name: "cards"
+            widget: "list"
+            label_singular: "Carte"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+              - { label: "Texte du lien", name: "link_text", widget: "string" }
+          - { label: "Citation", name: "quote", widget: "string" }
+
   - name: "site"
     label: "Réglages du site"
     files:
