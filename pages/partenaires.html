@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body>
+<body data-content="partenaires">
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -50,7 +50,7 @@
   <section class="page-banner">
     <div class="container">
       <p class="breadcrumb"><a href="../index.html">Accueil</a> / Partenaires</p>
-      <h1>Nos partenaires</h1>
+      <h1 data-field="banner.title">Nos partenaires</h1>
     </div>
     <div class="topo-divider"></div>
   </section>
@@ -59,9 +59,9 @@
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Ouverture internationale</span>
-        <h2 class="section-title underline-gold">Des partenariats au service de votre formation</h2>
-        <p class="section-subtitle">
+        <span class="section-tag" data-field="intro.tag">Ouverture internationale</span>
+        <h2 class="section-title underline-gold" data-field="intro.title">Des partenariats au service de votre formation</h2>
+        <p class="section-subtitle" data-field="intro.subtitle">
           L'ISTD Kalehe s'appuie sur des partenariats stratégiques, nationaux et internationaux, pour
           renforcer la qualité de sa formation et l'ouverture de ses étudiants sur le monde.
         </p>
@@ -71,8 +71,8 @@
       <div class="highlight-box reveal mb-40">
         <div class="highlight-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
         <div>
-          <h3>Hujambo Abari (Allemagne)</h3>
-          <p>
+          <h3 data-field="main_partner.title">Hujambo Abari (Allemagne)</h3>
+          <p data-field="main_partner.text">
             En partenariat avec Hujambo Abari (Allemagne), l'ISTD Kalehe bénéficie d'un appui
             académique, matériel et financier renforçant son engagement envers une éducation
             de qualité et une ouverture internationale.
@@ -82,20 +82,20 @@
 
       <!-- Partenaires techniques -->
       <div class="section-header reveal" style="margin-top:60px;">
-        <span class="section-tag">Partenaire technique</span>
-        <h2 class="section-title underline-gold">Connectivité & infrastructure</h2>
+        <span class="section-tag" data-field="tech.tag">Partenaire technique</span>
+        <h2 class="section-title underline-gold" data-field="tech.title">Connectivité & infrastructure</h2>
       </div>
 
       <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width:700px; margin:0 auto;">
         <div class="card reveal text-center grayscale-hover">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-satellite-dish"></i></div>
-          <h3 class="card-title">Starlink</h3>
-          <p class="card-text">Connectivité Internet haut débit pour l'ensemble du campus.</p>
+          <h3 class="card-title" data-field="tech.card_title">Starlink</h3>
+          <p class="card-text" data-field="tech.card_text">Connectivité Internet haut débit pour l'ensemble du campus.</p>
         </div>
       </div>
 
       <p class="text-center mt-40" style="color:var(--text-muted); font-size:0.85rem;">
-        Vous représentez une organisation souhaitant devenir partenaire de l'ISTD Kalehe ?
+        <span data-field="footer_note">Vous représentez une organisation souhaitant devenir partenaire de l'ISTD Kalehe ?</span>
         <a href="contact.html" style="color:var(--navy); font-weight:700;">Contactez-nous</a>.
       </p>
     </div>
@@ -151,6 +151,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/scroll-animations.js"></script>
   <script src="../js/site-settings-loader.js"></script>
+  <script src="../js/page-content-loader.js"></script>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -11,6 +11,41 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "partenaires"
+    label: "Page Partenaires"
+    files:
+      - file: "content/partenaires.json"
+        label: "Contenu de la page Partenaires"
+        name: "partenaires"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Introduction"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - label: "Partenaire principal (Hujambo Abari)"
+            name: "main_partner"
+            widget: "object"
+            fields:
+              - { label: "Nom du partenaire", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "Partenaire technique (Starlink)"
+            name: "tech"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - { label: "Nom du partenaire", name: "card_title", widget: "string" }
+              - { label: "Description", name: "card_text", widget: "text" }
+          - { label: "Phrase d'appel (devenir partenaire)", name: "footer_note", widget: "string" }
+
   - name: "vie-etudiante"
     label: "Page Vie étudiante"
     files:

@@ -1,0 +1,19 @@
+{
+  "banner": { "title": "Nos partenaires" },
+  "intro": {
+    "tag": "Ouverture internationale",
+    "title": "Des partenariats au service de votre formation",
+    "subtitle": "L'ISTD Kalehe s'appuie sur des partenariats stratégiques, nationaux et internationaux, pour renforcer la qualité de sa formation et l'ouverture de ses étudiants sur le monde."
+  },
+  "main_partner": {
+    "title": "Hujambo Abari (Allemagne)",
+    "text": "En partenariat avec Hujambo Abari (Allemagne), l'ISTD Kalehe bénéficie d'un appui académique, matériel et financier renforçant son engagement envers une éducation de qualité et une ouverture internationale."
+  },
+  "tech": {
+    "tag": "Partenaire technique",
+    "title": "Connectivité & infrastructure",
+    "card_title": "Starlink",
+    "card_text": "Connectivité Internet haut débit pour l'ensemble du campus."
+  },
+  "footer_note": "Vous représentez une organisation souhaitant devenir partenaire de l'ISTD Kalehe ?"
+}
