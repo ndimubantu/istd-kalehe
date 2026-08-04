@@ -11,6 +11,79 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "admissions"
+    label: "Page Admissions"
+    files:
+      - file: "content/admissions.json"
+        label: "Contenu de la page Admissions"
+        name: "admissions"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Introduction"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+              - { label: "Note (date limite)", name: "note", widget: "text" }
+          - label: "Encart horaires/adresse"
+            name: "office_card"
+            widget: "object"
+            fields:
+              - { label: "Titre horaires", name: "hours_title", widget: "string" }
+              - { label: "Texte horaires", name: "hours_text", widget: "string" }
+              - { label: "Titre adresse", name: "address_title", widget: "string" }
+              - { label: "Texte adresse", name: "address_text", widget: "text" }
+          - label: "En-tête \"Réservez votre place\""
+            name: "reservation"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+              - { label: "Mention légale sous le formulaire", name: "disclaimer", widget: "text" }
+          - label: "Documents requis"
+            name: "documents"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - label: "Premier cycle"
+                name: "cycle1"
+                widget: "object"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - label: "Liste des documents"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Document", name: "item", widget: "string" }
+              - label: "Deuxième cycle"
+                name: "cycle2"
+                widget: "object"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+                  - { label: "Texte du bouton", name: "link_text", widget: "string" }
+          - label: "Profils candidats"
+            name: "profiles"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre de section", name: "title", widget: "string" }
+              - label: "Les 3 cartes"
+                name: "cards"
+                widget: "list"
+                label_singular: "Carte"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Citation", name: "quote", widget: "text" }
+
   - name: "partenaires"
     label: "Page Partenaires"
     files:

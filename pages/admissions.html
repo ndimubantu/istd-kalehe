@@ -57,7 +57,7 @@
     }
   </style>
 </head>
-<body>
+<body data-content="admissions">
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -92,7 +92,7 @@
   <section class="page-banner">
     <div class="container">
       <p class="breadcrumb"><a href="../index.html">Accueil</a> / Admissions</p>
-      <h1>Admissions & Inscriptions</h1>
+      <h1 data-field="banner.title">Admissions & Inscriptions</h1>
     </div>
     <div class="topo-divider"></div>
   </section>
@@ -102,9 +102,9 @@
     <div class="container">
       <div class="two-col">
         <div class="reveal-left">
-          <span class="tag-pill">Inscriptions ouvertes</span>
-          <h2 class="section-title">Inscriptions pour la nouvelle année académique</h2>
-          <p class="mb-40">
+          <span class="tag-pill" data-field="intro.tag">Inscriptions ouvertes</span>
+          <h2 class="section-title" data-field="intro.title">Inscriptions pour la nouvelle année académique</h2>
+          <p class="mb-40" data-field="intro.text">
             Les inscriptions sont ouvertes au Bureau des Inscriptions de l'ISTD KALEHE, sis au site
             universitaire de l'institution à Bidabanga, près de Kalehe Centre. Le bureau est ouvert
             du lundi au samedi, de 8h00 à 15h00.
@@ -112,19 +112,19 @@
           <div style="background:var(--gray-bg); border-left:4px solid var(--gold); padding:18px 24px; border-radius:8px;">
             <p style="color:var(--text-muted); font-size:0.92rem;">
               <i class="fa-solid fa-circle-info" style="color:var(--gold-dark); margin-right:8px;"></i>
-              La date limite d'inscription sera communiquée ultérieurement, restez connectés sur nos
-              plateformes ou contactez-nous directement.
+              <span data-field="intro.note">La date limite d'inscription sera communiquée ultérieurement, restez connectés sur nos
+              plateformes ou contactez-nous directement.</span>
             </p>
           </div>
         </div>
         <div class="reveal-right">
           <div class="card">
             <div class="card-icon"><i class="fa-solid fa-clock"></i></div>
-            <h3 class="card-title">Horaires du bureau des inscriptions</h3>
-            <p class="card-text">Lundi – Samedi : 8h00 – 15h00</p>
+            <h3 class="card-title" data-field="office_card.hours_title">Horaires du bureau des inscriptions</h3>
+            <p class="card-text" data-field="office_card.hours_text">Lundi – Samedi : 8h00 – 15h00</p>
             <div class="card-icon" style="margin-top:20px;"><i class="fa-solid fa-location-dot"></i></div>
-            <h3 class="card-title">Adresse</h3>
-            <p class="card-text">Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC</p>
+            <h3 class="card-title" data-field="office_card.address_title">Adresse</h3>
+            <p class="card-text" data-field="office_card.address_text">Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC</p>
           </div>
         </div>
       </div>
@@ -135,9 +135,9 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Pré-inscription en ligne</span>
-        <h2 class="section-title underline-gold">Réservez votre place</h2>
-        <p class="section-subtitle">
+        <span class="section-tag" data-field="reservation.tag">Pré-inscription en ligne</span>
+        <h2 class="section-title underline-gold" data-field="reservation.title">Réservez votre place</h2>
+        <p class="section-subtitle" data-field="reservation.subtitle">
           Remplissez ce formulaire pour signaler votre intention de vous inscrire. Un message
           pré-rempli sera envoyé à notre secrétariat via WhatsApp. Vous devrez ensuite vous présenter
           au Bureau des Inscriptions avec vos documents pour confirmer définitivement votre place.
@@ -189,9 +189,9 @@
           <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Réserver ma place via WhatsApp</button>
         </form>
         <p style="color:var(--text-muted); font-size:0.82rem; margin-top:14px;">
-          <i class="fa-solid fa-circle-info"></i> Cette réservation ne remplace pas l'inscription
+          <i class="fa-solid fa-circle-info"></i> <span data-field="reservation.disclaimer">Cette réservation ne remplace pas l'inscription
           officielle. Elle permet simplement de signaler votre intérêt avant votre passage au bureau
-          des inscriptions avec les documents requis ci-dessous.
+          des inscriptions avec les documents requis ci-dessous.</span>
         </p>
       </div>
     </div>
@@ -201,33 +201,33 @@
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Dossier d'inscription</span>
-        <h2 class="section-title underline-gold">Documents requis</h2>
+        <span class="section-tag" data-field="documents.tag">Dossier d'inscription</span>
+        <h2 class="section-title underline-gold" data-field="documents.title">Documents requis</h2>
       </div>
 
       <div class="two-col">
         <div class="card reveal-left">
           <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
-          <h3 class="card-title">Premier cycle (Licence LMD)</h3>
+          <h3 class="card-title" data-field="documents.cycle1.title">Premier cycle (Licence LMD)</h3>
           <ul class="icon-list check">
-            <li><i class="fa-solid fa-check"></i> L'original du Diplôme d'État ou son équivalent, ou la confirmation de réussite aux examens d'État</li>
-            <li><i class="fa-solid fa-check"></i> Trois photocopies du Diplôme d'État (pour ceux qui en ont déjà reçu l'original)</li>
-            <li><i class="fa-solid fa-check"></i> Des photocopies des bulletins de 5ème et 6ème années secondaires</li>
-            <li><i class="fa-solid fa-check"></i> Une photocopie recto-verso de la carte d'identité</li>
-            <li><i class="fa-solid fa-check"></i> Une attestation de bonne conduite, vie et mœurs</li>
-            <li><i class="fa-solid fa-check"></i> Une attestation d'aptitude physique</li>
-            <li><i class="fa-solid fa-check"></i> Une attestation de naissance</li>
-            <li><i class="fa-solid fa-check"></i> Quatre photos passeport</li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.0">L'original du Diplôme d'État ou son équivalent, ou la confirmation de réussite aux examens d'État</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.1">Trois photocopies du Diplôme d'État (pour ceux qui en ont déjà reçu l'original)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.2">Des photocopies des bulletins de 5ème et 6ème années secondaires</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.3">Une photocopie recto-verso de la carte d'identité</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.4">Une attestation de bonne conduite, vie et mœurs</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.5">Une attestation d'aptitude physique</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.6">Une attestation de naissance</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-field="documents.cycle1.items.7">Quatre photos passeport</span></li>
           </ul>
         </div>
 
         <div class="card reveal-right">
           <div class="card-icon"><i class="fa-solid fa-file-circle-question"></i></div>
-          <h3 class="card-title">Deuxième cycle (Maîtrise LMD)</h3>
-          <p class="card-text">
+          <h3 class="card-title" data-field="documents.cycle2.title">Deuxième cycle (Maîtrise LMD)</h3>
+          <p class="card-text" data-field="documents.cycle2.text">
             Liste des documents à venir — contactez le secrétariat académique pour plus de détails.
           </p>
-          <a href="contact.html" class="btn btn-navy mt-40"><i class="fa-solid fa-envelope"></i> Contacter le secrétariat</a>
+          <a href="contact.html" class="btn btn-navy mt-40"><i class="fa-solid fa-envelope"></i> <span data-field="documents.cycle2.link_text">Contacter le secrétariat</span></a>
         </div>
       </div>
     </div>
@@ -237,29 +237,29 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Pour vous</span>
-        <h2 class="section-title underline-gold">Un parcours pour chaque profil</h2>
+        <span class="section-tag" data-field="profiles.tag">Pour vous</span>
+        <h2 class="section-title underline-gold" data-field="profiles.title">Un parcours pour chaque profil</h2>
       </div>
 
       <div class="card-grid">
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-user-graduate"></i></div>
-          <h3 class="card-title">Pour les bacheliers</h3>
-          <p class="card-text" style="font-style:italic;">
+          <h3 class="card-title" data-field="profiles.cards.0.title">Pour les bacheliers</h3>
+          <p class="card-text" style="font-style:italic;" data-field="profiles.cards.0.quote">
             « Choisissez une formation d'excellence, alignée sur les besoins du marché et préparant aux carrières d'avenir. »
           </p>
         </div>
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-user-tie"></i></div>
-          <h3 class="card-title">Pour les anciens diplômés</h3>
-          <p class="card-text" style="font-style:italic;">
+          <h3 class="card-title" data-field="profiles.cards.1.title">Pour les anciens diplômés</h3>
+          <p class="card-text" style="font-style:italic;" data-field="profiles.cards.1.quote">
             « Renforcez vos compétences, explorez de nouvelles perspectives grâce à nos programmes et notre réseau. »
           </p>
         </div>
         <div class="card reveal text-center">
           <div class="card-icon" style="margin:0 auto 20px;"><i class="fa-solid fa-people-roof"></i></div>
-          <h3 class="card-title">Pour les familles de la région</h3>
-          <p class="card-text" style="font-style:italic;">
+          <h3 class="card-title" data-field="profiles.cards.2.title">Pour les familles de la région</h3>
+          <p class="card-text" style="font-style:italic;" data-field="profiles.cards.2.quote">
             « Offrez à vos enfants une éducation de qualité près de chez vous, dans un environnement stimulant et sécurisé. »
           </p>
         </div>
@@ -317,6 +317,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/scroll-animations.js"></script>
   <script src="../js/site-settings-loader.js"></script>
+  <script src="../js/page-content-loader.js"></script>
   <script src="../js/reservation-form.js"></script>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>

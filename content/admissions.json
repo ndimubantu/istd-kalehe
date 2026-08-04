@@ -1,0 +1,52 @@
+{
+  "banner": { "title": "Admissions & Inscriptions" },
+  "intro": {
+    "tag": "Inscriptions ouvertes",
+    "title": "Inscriptions pour la nouvelle année académique",
+    "text": "Les inscriptions sont ouvertes au Bureau des Inscriptions de l'ISTD KALEHE, sis au site universitaire de l'institution à Bidabanga, près de Kalehe Centre. Le bureau est ouvert du lundi au samedi, de 8h00 à 15h00.",
+    "note": "La date limite d'inscription sera communiquée ultérieurement, restez connectés sur nos plateformes ou contactez-nous directement."
+  },
+  "office_card": {
+    "hours_title": "Horaires du bureau des inscriptions",
+    "hours_text": "Lundi – Samedi : 8h00 – 15h00",
+    "address_title": "Adresse",
+    "address_text": "Site universitaire de l'ISTD KALEHE, Bidabanga, près de Kalehe Centre, Territoire de Kalehe, Sud-Kivu, RDC"
+  },
+  "reservation": {
+    "tag": "Pré-inscription en ligne",
+    "title": "Réservez votre place",
+    "subtitle": "Remplissez ce formulaire pour signaler votre intention de vous inscrire. Un message pré-rempli sera envoyé à notre secrétariat via WhatsApp. Vous devrez ensuite vous présenter au Bureau des Inscriptions avec vos documents pour confirmer définitivement votre place.",
+    "disclaimer": "Cette réservation ne remplace pas l'inscription officielle. Elle permet simplement de signaler votre intérêt avant votre passage au bureau des inscriptions avec les documents requis ci-dessous."
+  },
+  "documents": {
+    "tag": "Dossier d'inscription",
+    "title": "Documents requis",
+    "cycle1": {
+      "title": "Premier cycle (Licence LMD)",
+      "items": [
+        "L'original du Diplôme d'État ou son équivalent, ou la confirmation de réussite aux examens d'État",
+        "Trois photocopies du Diplôme d'État (pour ceux qui en ont déjà reçu l'original)",
+        "Des photocopies des bulletins de 5ème et 6ème années secondaires",
+        "Une photocopie recto-verso de la carte d'identité",
+        "Une attestation de bonne conduite, vie et mœurs",
+        "Une attestation d'aptitude physique",
+        "Une attestation de naissance",
+        "Quatre photos passeport"
+      ]
+    },
+    "cycle2": {
+      "title": "Deuxième cycle (Maîtrise LMD)",
+      "text": "Liste des documents à venir — contactez le secrétariat académique pour plus de détails.",
+      "link_text": "Contacter le secrétariat"
+    }
+  },
+  "profiles": {
+    "tag": "Pour vous",
+    "title": "Un parcours pour chaque profil",
+    "cards": [
+      { "title": "Pour les bacheliers", "quote": "« Choisissez une formation d'excellence, alignée sur les besoins du marché et préparant aux carrières d'avenir. »" },
+      { "title": "Pour les anciens diplômés", "quote": "« Renforcez vos compétences, explorez de nouvelles perspectives grâce à nos programmes et notre réseau. »" },
+      { "title": "Pour les familles de la région", "quote": "« Offrez à vos enfants une éducation de qualité près de chez vous, dans un environnement stimulant et sécurisé. »" }
+    ]
+  }
+}
