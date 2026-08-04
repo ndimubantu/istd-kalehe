@@ -1,0 +1,30 @@
+{
+  "banner": {
+    "title": "À propos de l'ISTD Kalehe"
+  },
+  "mission": {
+    "tag": "Notre mission",
+    "title": "Une institution au service du développement de Kalehe",
+    "paragraph_1": "Situé au cœur du territoire de Kalehe, dans la province du Sud-Kivu, l'Institut Supérieur des Techniques de Développement (ISTD) est une institution dédiée à la formation de professionnels capables de relever les défis de notre région.",
+    "paragraph_2": "Nous nous engageons à former des agents de développement compétents et éthiques, prêts à contribuer positivement à la transformation socio-économique de Kalehe et au-delà."
+  },
+  "team": {
+    "tag": "Notre équipe",
+    "title": "Un corps enseignant d'élite",
+    "subtitle": "À l'ISTD Kalehe, votre apprentissage est entre les mains d'experts. Notre personnel enseignant est composé de professeurs hautement qualifiés et thésés, des Chefs des Travaux, des Assistants permanents et parfois des professeurs visiteurs internationaux, véritables piliers de notre excellence académique.",
+    "cards": [
+      { "title": "Expertise reconnue", "text": "Des professionnels avec une solide expérience de terrain et de recherche." },
+      { "title": "Pédagogie innovante", "text": "Des méthodes d'enseignement dynamiques et interactives." },
+      { "title": "Encadrement personnalisé", "text": "Un suivi attentif pour garantir votre succès." }
+    ]
+  },
+  "director": {
+    "tag": "Message institutionnel",
+    "title": "Mot du Directeur Général",
+    "paragraph_1": "C'est avec une grande fierté que je vous souhaite la bienvenue à l'Institut Supérieur des Techniques de Développement de Kalehe. Depuis sa création, notre institution s'est donné pour mission de former des cadres et techniciens rigoureux, capables de répondre aux défis du développement rural, agricole et socio-économique de notre région.",
+    "paragraph_2": "Nous croyons que l'éducation est le levier le plus sûr pour transformer durablement Kalehe et le Sud-Kivu. C'est pourquoi nous mettons un point d'honneur à offrir un encadrement de qualité, un corps enseignant engagé et un environnement propice à la réussite de chaque étudiant.",
+    "paragraph_3": "Je vous invite à découvrir nos filières et à rejoindre une communauté qui place le savoir au service du développement.",
+    "name": "Prof. Ass. Bertin Buzigire Mufanzara",
+    "role": "Directeur Général, ISTD Kalehe — Professeur associé"
+  }
+}

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body>
+<body data-content="a-propos">
 
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
@@ -52,7 +52,7 @@
   <section class="page-banner">
     <div class="container">
       <p class="breadcrumb"><a href="../index.html">Accueil</a> / À propos</p>
-      <h1>À propos de l'ISTD Kalehe</h1>
+      <h1 data-field="banner.title">À propos de l'ISTD Kalehe</h1>
     </div>
     <div class="topo-divider"></div>
   </section>
@@ -62,14 +62,14 @@
     <div class="container">
       <div class="two-col">
         <div class="reveal-left">
-          <span class="tag-pill">Notre mission</span>
-          <h2 class="section-title">Une institution au service du développement de Kalehe</h2>
-          <p class="mb-40">
+          <span class="tag-pill" data-field="mission.tag">Notre mission</span>
+          <h2 class="section-title" data-field="mission.title">Une institution au service du développement de Kalehe</h2>
+          <p class="mb-40" data-field="mission.paragraph_1">
             Situé au cœur du territoire de Kalehe, dans la province du Sud-Kivu, l'Institut Supérieur
             des Techniques de Développement (ISTD) est une institution dédiée à la formation de
             professionnels capables de relever les défis de notre région.
           </p>
-          <p>
+          <p data-field="mission.paragraph_2">
             Nous nous engageons à former des agents de développement compétents et éthiques, prêts
             à contribuer positivement à la transformation socio-économique de Kalehe et au-delà.
           </p>
@@ -85,9 +85,9 @@
   <section class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Notre équipe</span>
-        <h2 class="section-title underline-gold">Un corps enseignant d'élite</h2>
-        <p class="section-subtitle">
+        <span class="section-tag" data-field="team.tag">Notre équipe</span>
+        <h2 class="section-title underline-gold" data-field="team.title">Un corps enseignant d'élite</h2>
+        <p class="section-subtitle" data-field="team.subtitle">
           À l'ISTD Kalehe, votre apprentissage est entre les mains d'experts. Notre personnel enseignant
           est composé de professeurs hautement qualifiés et thésés, des Chefs des Travaux, des Assistants
           permanents et parfois des professeurs visiteurs internationaux, véritables piliers de notre
@@ -98,18 +98,18 @@
       <div class="card-grid">
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-award"></i></div>
-          <h3 class="card-title">Expertise reconnue</h3>
-          <p class="card-text">Des professionnels avec une solide expérience de terrain et de recherche.</p>
+          <h3 class="card-title" data-field="team.cards.0.title">Expertise reconnue</h3>
+          <p class="card-text" data-field="team.cards.0.text">Des professionnels avec une solide expérience de terrain et de recherche.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-lightbulb"></i></div>
-          <h3 class="card-title">Pédagogie innovante</h3>
-          <p class="card-text">Des méthodes d'enseignement dynamiques et interactives.</p>
+          <h3 class="card-title" data-field="team.cards.1.title">Pédagogie innovante</h3>
+          <p class="card-text" data-field="team.cards.1.text">Des méthodes d'enseignement dynamiques et interactives.</p>
         </div>
         <div class="card reveal">
           <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-          <h3 class="card-title">Encadrement personnalisé</h3>
-          <p class="card-text">Un suivi attentif pour garantir votre succès.</p>
+          <h3 class="card-title" data-field="team.cards.2.title">Encadrement personnalisé</h3>
+          <p class="card-text" data-field="team.cards.2.text">Un suivi attentif pour garantir votre succès.</p>
         </div>
       </div>
     </div>
@@ -126,28 +126,28 @@
           </div>
         </div>
         <div class="reveal-right">
-          <span class="tag-pill">Message institutionnel</span>
-          <h2 class="section-title">Mot du Directeur Général</h2>
-          <p style="color:var(--text-muted);">
+          <span class="tag-pill" data-field="director.tag">Message institutionnel</span>
+          <h2 class="section-title" data-field="director.title">Mot du Directeur Général</h2>
+          <p style="color:var(--text-muted);" data-field="director.paragraph_1">
             C'est avec une grande fierté que je vous souhaite la bienvenue à l'Institut Supérieur
             des Techniques de Développement de Kalehe. Depuis sa création, notre institution s'est
             donné pour mission de former des cadres et techniciens rigoureux, capables de répondre
             aux défis du développement rural, agricole et socio-économique de notre région.
           </p>
-          <p style="color:var(--text-muted);">
+          <p style="color:var(--text-muted);" data-field="director.paragraph_2">
             Nous croyons que l'éducation est le levier le plus sûr pour transformer durablement
             Kalehe et le Sud-Kivu. C'est pourquoi nous mettons un point d'honneur à offrir un
             encadrement de qualité, un corps enseignant engagé et un environnement propice à la
             réussite de chaque étudiant.
           </p>
-          <p class="mb-40" style="color:var(--text-muted);">
+          <p class="mb-40" style="color:var(--text-muted);" data-field="director.paragraph_3">
             Je vous invite à découvrir nos filières et à rejoindre une communauté qui place le
             savoir au service du développement.
           </p>
-          <p style="font-family:var(--font-heading); font-weight:700; color:var(--navy);">
+          <p style="font-family:var(--font-heading); font-weight:700; color:var(--navy);" data-field="director.name">
             Prof. Ass. Bertin Buzigire Mufanzara
           </p>
-          <p style="color:var(--text-muted); font-size:0.9rem;">Directeur Général, ISTD Kalehe — Professeur associé</p>
+          <p style="color:var(--text-muted); font-size:0.9rem;" data-field="director.role">Directeur Général, ISTD Kalehe — Professeur associé</p>
         </div>
       </div>
     </div>
@@ -206,6 +206,7 @@
   <script src="../js/main.js"></script>
   <script src="../js/scroll-animations.js"></script>
   <script src="../js/site-settings-loader.js"></script>
+  <script src="../js/page-content-loader.js"></script>
   <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

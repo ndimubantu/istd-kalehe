@@ -11,6 +11,53 @@ publish_mode: simple
 locale: "fr"
 
 collections:
+  - name: "a-propos"
+    label: "Page À propos"
+    files:
+      - file: "content/a-propos.json"
+        label: "Contenu de la page À propos"
+        name: "a-propos"
+        fields:
+          - label: "Bannière"
+            name: "banner"
+            widget: "object"
+            fields:
+              - { label: "Titre de la page", name: "title", widget: "string" }
+          - label: "Bloc \"Notre mission\""
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Premier paragraphe", name: "paragraph_1", widget: "text" }
+              - { label: "Deuxième paragraphe", name: "paragraph_2", widget: "text" }
+          - label: "Bloc \"Corps enseignant\""
+            name: "team"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Sous-titre", name: "subtitle", widget: "text" }
+              - label: "Les 3 cartes"
+                name: "cards"
+                widget: "list"
+                label_singular: "Carte"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "text" }
+          - label: "Mot du Directeur Général"
+            name: "director"
+            widget: "object"
+            fields:
+              - { label: "Petite étiquette", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Premier paragraphe", name: "paragraph_1", widget: "text" }
+              - { label: "Deuxième paragraphe", name: "paragraph_2", widget: "text" }
+              - { label: "Troisième paragraphe", name: "paragraph_3", widget: "text" }
+              - { label: "Nom du Directeur", name: "name", widget: "string" }
+              - { label: "Fonction", name: "role", widget: "string" }
+
   - name: "accueil"
     label: "Page d'accueil"
     files:
